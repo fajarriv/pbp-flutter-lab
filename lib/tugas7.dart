@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './widgets/drawer.dart';
 
 class Counter extends StatefulWidget {
   const Counter({Key? key}) : super(key: key);
@@ -30,6 +31,7 @@ class _CounterState extends State<Counter> {
       appBar: AppBar(
         title: const Text('Program Counter'),
       ),
+      drawer: drawer(context),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
