@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './tugas7.dart';
+import 'screens/tugas7.dart';
 
 void main() {
   runApp(const MyApp());

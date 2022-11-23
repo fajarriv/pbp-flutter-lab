@@ -61,3 +61,26 @@ Navigator bekerja berdasarkan prinsip Stack. Halaman yang sedang ditampilkan aka
 3. Membuat halaman Tambah Budget
 4. Membuah halaman yang menampilkan Data Budget
 5. Me-*refactor* widget Drawer ke file terpisah 
+
+
+# Readme Tugas 9
+
+### Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Bisaa. Kita dapat menyimpan data JSON pada sebuah `Map`. Menurut saya jika tidak membuat model sebelum pengambilan data JSON kita akan sulit untuk mengatur data yang sudah diambil terutama data JSON yang kit ambil besar.
+
+### Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+-  `Expanded`, untuk membuat child widgetnya mengisi ruang pada mainaxis
+-  `ListView.builder`, Membuat array widget linier yang *scrollable*. widget yang dibuat dapat sesuai permintaan.
+- `ListTile`, Membuat satu baris dengan tinggi tetap yang biasanya berisi beberapa teks serta ikon awal atau akhir.
+- `Align`, Untuk mengatur posisi childnya
+
+### Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+Pada tugas ini pengambilan data dilakukan dengan cara membuat function untuk mengirimkan HTTP Request (GET), kemuduai response akan dimanipulasi dan dimasukkan kedalam sebuah Object dan disimpan pada List of Object. Fungsi akan mengembalikan List tersebut. Untuk menampilkan data, kita dapat melakukan iterasi pada hasil list dari fungsi.
+### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Membuat file `mywatchlist.dart`
+2. Menambahkan Routes mywatchlist ke drawer
+3. Membuat fungsi `fetchWatchList()` untuk mengambil data JSON
+4. Menampilkan data hasil dari fungsi `fetchWatchList()` di `mywatchlist.dart`
+5. Me-*refactor* fungsi `fetchWatchList()`
+6. Membuat halaman detail dari watchlist
+7. Menambahkan checkbox pada setiap watchlist dan menambahkan outline sesuai dengan status dari watchlist
